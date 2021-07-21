@@ -12,9 +12,9 @@ pull_request:
 
 jobs:
  super-lint:
- name: Lint code base
- runs-on: ubuntu-latest
- steps:
+  name: Lint code base
+  runs-on: ubuntu-latest
+  steps:
    - name: checkout code
      uses: actions/checkout@v2
    
