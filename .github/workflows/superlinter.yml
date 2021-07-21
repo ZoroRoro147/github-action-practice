@@ -11,15 +11,15 @@ pull_request:
 #     branches: [ main ]
 
 jobs:
-super-lint:
-name: Lint code base
+ super-lint:
+ name: Lint code base
 runs-on: ubuntu-latest
  steps:
-  -name: checkout code
+  - name: checkout code
    uses: actions/checkout@v2
    
-  -name: RUN Super-Linter
-   -uses: github/super-linter@v3
+  - name: RUN Super-Linter
+   uses: github/super-linter@v3
    
    env:
    DEFAULT_BRANCH: main
